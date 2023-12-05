@@ -1,0 +1,68 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    grid-area: h;
+    color: rgb(0,135,104);
+    font-size: larger;
+}
+
+nav{
+    grid-area: n;
+    background-color: rgb(0,135,104);
+    padding: 20px;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+}
+h1{
+    margin: 10px;
+}
+
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ab aj";
+}
+#bal{
+    grid-area: ab;
+}
+
+#jobb{
+    grid-area: aj;
+    display: block;
+}
+footer{
+    grid-area: f;
+    color: rgb(0,135,104);
+    text-align: center;
+}
+
+#fotartalom{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'h h'
+    'n n'
+    'm m'
+    'f f'
+    ;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+aside img{
+    width: 100px;
+    height: auto;
+    border: lightgrey 1 px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+#bal img{
+    width: 100px;
+    height: auto;
+}
